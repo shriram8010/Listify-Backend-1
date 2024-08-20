@@ -42,7 +42,7 @@ public class SecurityConfig {
 		.exceptionHandling().authenticationEntryPoint(authEntry).
 		and().
 		authorizeRequests()
-		.antMatchers("/user/register","/user/login","/getallproduct","/src/**","/images/**","/static/images/**","/book/getallProduct",
+		.antMatchers("/user/register","/user/login","/getallproduct","/src/**","/images/**","/static/images/**","/book/getallProduct","/image/**",
 				"/electronics/getallProduct","/furniture/getallProduct","/vehicle/getallProduct","/getproduct/{id}","/book/get/{id}","/vehicle/get/{id}",
 				"/user/get/{id}","/furniture/get/{id}","/electronics/get/{id}","/getbylocation/{location}","/getproductbyprice/{price}","/getproductbytitle/{charactertofind}","/v*/api-doc*/**","/swagger-ui/**").permitAll()
 		// only required for JS clnts (react / angular) : for the pre flight requests
